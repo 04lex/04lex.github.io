@@ -72,12 +72,27 @@
     .content {
       padding: 2rem;
     }
+
     .projects {
-      display: grid;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 2rem;
     }
+
+    /* mobile */
+    @media (max-width: 767px) {
+        .projects {
+            display: grid;
+        }
+    }
+
+    /* desktop browser */
+    @media (min-width: 768px) {
+        .projects {
+            display: flex;
+        }
+    }
+
     .project-card {
       background-color: #333;
       color: #eee;
@@ -192,9 +207,9 @@
 </head>
 <body>
   <header>
-    <div class="logo">
+    <!-- <div class="logo">
         <img src="6533101.png" alt="Seven Segment Logo">
-    </div>
+    </div> -->
 
     <div class="header-content">
         <h1>Seven Segment</h1>
